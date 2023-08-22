@@ -6,4 +6,5 @@ const chat = combineReducers({
     messages,
     users
 })
+
 export default chat

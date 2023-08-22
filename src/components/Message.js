@@ -1,13 +1,13 @@
 import React from "react";
-import { ReactPropTypes as PropTypes} from "react";
+import PropTypes from 'prop-types';
 
 const Message = (message, author) => (
     <p>
-        <i>{author}</i>; {message} 
+        <i>{author}</i>: {message} 
     </p>
 )
 
-Message.PropTypes = {
+Message.propTypes = {
     message: PropTypes.string.isRequired,
     author: PropTypes.string.isRequired
 }

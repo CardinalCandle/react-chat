@@ -12,7 +12,7 @@ const messages = (state = [], action) => {
                 }
             ])                
         default:
-            break;
+            return state;
     }
 }
 

@@ -7,6 +7,6 @@ const mapDispatchToProps = dispatch => ({
         dispatch(addMessage(message, author))
     }
 })
-
+console.log("AddMessage");
 export const AddMessage = connect(() => ({
     }), mapDispatchToProps)(addMessageComponent)

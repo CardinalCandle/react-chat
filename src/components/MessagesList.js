@@ -1,25 +1,26 @@
 import React from "react";
-import { ReactPropTypes as PropTypes} from "react";
+import PropTypes from 'prop-types';
 import Message from './Message';
+
 const MessagesList = ({messages}) => (
-    <section is="messages-list">
+    <section id="messages-list">
         <ul>
             {messages.map(message => (
                 <Message
-                key={message.id}
-                {...message}
+                    key={message.id}
+                    {...message}
                 />
             ))}
         </ul>
     </section>
 )
 
-MessagesList.PropTypes = {
+MessagesList.propTypes = {
     messages: PropTypes.arrayOf(
         PropTypes.shape({
             id: PropTypes.number.isRequired,
             author: PropTypes.string.isRequired,
-            message: PropTypes.string.isRequired 
+            message: PropTypes.string.isRequired,
         }).isRequired
     ).isRequired
 }
