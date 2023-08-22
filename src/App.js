@@ -9,8 +9,8 @@ class App extends Component {
   render() {
     return (
       <div id="container">
-      <section id='main'>
         <Sidebar/>
+      <section id='main'>
         <AddMessage/>    
         <MessagesList/>
       </section>

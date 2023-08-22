@@ -1,5 +1,5 @@
 const WebSocket = require('ws');
-const { ADD_USER } = require('../src/constants/ActionTypes');
+const { ADD_USER } = require('../src/constants/ActionTypes.js');
 const wss = new WebSocket.Server({port : 8989});
 const users = [];
 const broadcast = (data, ws) => {

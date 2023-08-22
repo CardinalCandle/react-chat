@@ -14,11 +14,11 @@ body {
     grid-template-areas: "sidebar main";
     width: 100vw;
     height: 100vh;
-    background-color: black;
+    
 }
 #main {
     grid-area: main;
-    background-color: darkolivegreen;
+    
 }
 #new-message {
     position: fixed;
@@ -27,16 +27,16 @@ body {
     padding: 5px;
     margin-left: 0px;
     border-top: 1px solid #3f3f3f;
-    background-color: blueviolet;
+    
 }
 #messages-list {
     padding: 5px 0 0 5px;
-    background-color: hotpink;
+    
 }
 #sidebar {
     grid-area: sidebar;
     padding: 5px 0 0 5px;
     border-right: 1px solid #3f3f3f;
     height: 100%;
-    background-color: cornflowerblue;
+    
 }
